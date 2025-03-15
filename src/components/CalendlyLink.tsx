@@ -1,4 +1,7 @@
+"use client";
+
 import { FC } from "react";
+import { InlineWidget } from "react-calendly";
 
 const CalendlyWidget: FC = () => {
   return (
@@ -9,9 +12,11 @@ const CalendlyWidget: FC = () => {
       <h2 className="text-3xl text-blue-600 font-semibold text-center relative z-10">
         Schedule a call with us below 👇
       </h2>
-      <div
-        className="calendly-inline-widget min-w-[320px] h-[900px] fit-content overflow-hidden md:absolute md:top-[calc(-1.5vw-20px)]"
-        data-url="https://calendly.com/sev-keoss/intro-call"
+      <InlineWidget
+        url="https://calendly.com/sev-keoss/intro-call"
+        styles={{
+          height: "750px",
+        }}
       />
     </div>
   );

@@ -9,10 +9,6 @@ const RootLayout = ({
   return (
     <html lang="en">
       <body>{children}</body>
-      <script
-        src="https://assets.calendly.com/assets/external/widget.js"
-        async
-      ></script>
     </html>
   );
 };
