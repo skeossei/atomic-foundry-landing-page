@@ -15,7 +15,9 @@ const CalendlyWidget: FC = () => {
       <InlineWidget
         url="https://calendly.com/sev-keoss/intro-call"
         styles={{
-          height: "750px",
+          height: "900px",
+          width: "100%",
+          minWidth: "320px",
         }}
       />
     </div>
