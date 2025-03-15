@@ -1,19 +1,21 @@
-import { JSX } from "react";
+import { FC } from "react";
 import Header from "@/components/Header";
-import Hero from "@/components/Hero";
 import VideoSection from "@/components/VideoSection";
 import CallToAction from "@/components/CallToAction";
+import CalendlyLink from "@/components/CalendlyLink";
 
-const Home = (): JSX.Element => {
+const Home: FC = () => {
   return (
-    <div className="min-h-screen bg-gray-50">
-      <div className="container max-w-7xl mx-auto px-4 py-8">
-        <Header />
-        <main>
-          <Hero />
+    <div className="flex flex-col w-full min-h-screen">
+      <div className="flex flex-col mx-auto w-full px-4 py-8 space-y-10 bg-gray-100">
+        <main className="space-y-5">
+          <Header />
           <VideoSection />
           <CallToAction />
         </main>
+      </div>
+      <div id="calendly-container" className="flex flex-col w-full px-4 py-12">
+        <CalendlyLink />
       </div>
     </div>
   );
